@@ -1,0 +1,968 @@
+/* Recklinghausen Page Styles - Based on HomePage styles */
+.recklinghausen-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  padding-top: 0;
+  flex: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Hero Section - Same as HomePage */
+.hero-section {
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  min-height: 50vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.2;
+  color: #f0f0f0;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  line-height: 1.6;
+  color: #e8e8e8;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.primary-button,
+.secondary-button {
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  width: 200px;
+  text-align: center;
+}
+
+.primary-button {
+  background: white;
+  color: #4a90e2;
+}
+
+.primary-button:hover {
+  background: #f8f9fa;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.secondary-button {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.secondary-button:hover {
+  background: white;
+  color: #4a90e2;
+  transform: translateY(-2px);
+}
+
+/* Location Details Section */
+.location-details-section {
+  padding: 50px 0;
+  background: white;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.praxis-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.doctor-image-container {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.doctor-image {
+  width: 100%;
+  height: 400px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+
+.location-info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  width: 100%;
+}
+
+.location-info-card {
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 15px;
+  background: #f8f9fa;
+  transition: transform 0.3s ease;
+  border: 1px solid #e9ecef;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.location-info-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.location-info-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.location-info-card p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.opening-hours-detail {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.hours-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.hours-item:last-child {
+  border-bottom: none;
+}
+
+.hours-item span:first-child {
+  color: #666;
+  font-weight: 500;
+}
+
+.hours-item span:last-child {
+  color: #333;
+  font-weight: 600;
+}
+
+.phone-link {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  display: block;
+  text-align: center;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: rgba(74, 144, 226, 0.1);
+  border: 2px solid transparent;
+  margin: 0 auto;
+}
+
+.phone-link:hover {
+  color: #357abd;
+  background: rgba(74, 144, 226, 0.2);
+  border-color: #4a90e2;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+}
+
+/* Customer Reviews Section */
+.reviews-section {
+  padding: 50px 0;
+  background: #f8f9fa;
+}
+
+/* Google Rating Display */
+.google-rating-display {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.google-rating-card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e9ecef;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 400px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.google-rating-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.google-logo {
+  background: linear-gradient(135deg, #4285f4, #34a853);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.rating-info {
+  flex: 1;
+  text-align: center;
+}
+
+.rating-score {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.rating-stars {
+  color: #ffc107;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+
+.half-star {
+  position: relative;
+  overflow: hidden;
+}
+
+.half-star::before {
+  content: '★';
+  position: absolute;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+  color: #ffc107;
+}
+
+.rating-count {
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Desktop/Tablet Reviews */
+.reviews-desktop {
+  display: block;
+}
+
+.reviews-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+}
+
+.scroll-button {
+  background: linear-gradient(135deg, #4a90e2, #357abd);
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.scroll-button:hover {
+  background: linear-gradient(135deg, #357abd, #2968a3);
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(74, 144, 226, 0.3);
+}
+
+.reviews-scroll {
+  flex: 1;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.reviews-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.reviews-track {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+  min-width: max-content;
+}
+
+.review-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e9ecef;
+  min-width: 250px;
+  max-width: 280px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.review-stars {
+  color: #ffc107;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.review-text {
+  color: #333;
+  line-height: 1.6;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  font-style: italic;
+  text-align: center;
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 5px;
+  max-height: 180px;
+}
+
+.review-author {
+  text-align: center;
+  border-top: 1px solid #e9ecef;
+  padding-top: 10px;
+  flex-shrink: 0;
+}
+
+.review-author strong {
+  color: #4a90e2;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.review-author span {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+/* Mobile Reviews */
+.reviews-mobile {
+  display: none;
+}
+
+.reviews-dropdown-toggle {
+  background: linear-gradient(135deg, #4a90e2, #357abd);
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.reviews-dropdown-toggle:hover {
+  background: linear-gradient(135deg, #357abd, #2968a3);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(74, 144, 226, 0.3);
+}
+
+.dropdown-arrow {
+  transition: transform 0.3s ease;
+}
+
+.dropdown-arrow.open {
+  transform: rotate(180deg);
+}
+
+.reviews-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.review-card-mobile {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e9ecef;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.review-card-mobile:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.review-card-mobile .review-stars {
+  color: #ffc107;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.review-card-mobile .review-text {
+  color: #333;
+  line-height: 1.6;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+  font-style: italic;
+  text-align: center;
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 5px;
+  max-height: 160px;
+}
+
+.review-card-mobile .review-author {
+  text-align: center;
+  border-top: 1px solid #e9ecef;
+  padding-top: 8px;
+  flex-shrink: 0;
+}
+
+.review-card-mobile .review-author strong {
+  color: #4a90e2;
+  font-size: 0.85rem;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.review-card-mobile .review-author span {
+  color: #666;
+  font-size: 0.75rem;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 50px 0;
+  background: white;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+.contact-item {
+  text-align: center;
+  padding: 25px 20px;
+  background: #f8f9fa;
+  border-radius: 15px;
+  border: 1px solid #e9ecef;
+}
+
+.contact-item h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #4a90e2;
+  margin-bottom: 12px;
+}
+
+.contact-item p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 8px 0;
+}
+
+.contact-button {
+  background: linear-gradient(135deg, #4a90e2, #357abd);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.contact-button:hover {
+  background: linear-gradient(135deg, #357abd, #2968a3);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(74, 144, 226, 0.3);
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .hero-section {
+    padding: 80px 0;
+    min-height: 60vh;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 35px;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .primary-button,
+  .secondary-button {
+    width: auto;
+    padding: 15px 30px;
+    font-size: 16px;
+  }
+
+  .location-details-section,
+  .services-section,
+  .contact-section {
+    padding: 70px 0;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+  }
+
+  .praxis-info-container {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .doctor-image-container {
+    flex: 0 0 300px;
+    max-width: 300px;
+  }
+
+  .location-info-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    flex: 1;
+  }
+
+  .location-info-card {
+    padding: 35px 25px;
+    height: 400px;
+  }
+
+  .location-info-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+
+  .location-info-card p {
+    font-size: 1rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .service-card {
+    padding: 35px 25px;
+  }
+
+  .service-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .service-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+
+  .service-card p {
+    font-size: 1rem;
+  }
+
+  .contact-item {
+    padding: 35px 25px;
+  }
+
+  .contact-item h4 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+
+  .contact-item p {
+    font-size: 1rem;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .hero-section {
+    padding: 100px 0;
+    min-height: 70vh;
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+  }
+
+  .location-details-section,
+  .services-section,
+  .contact-section {
+    padding: 80px 0;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+  }
+
+  .location-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .location-info-card {
+    padding: 40px 20px;
+  }
+
+  .services-grid {
+    gap: 40px;
+  }
+
+  .service-card {
+    padding: 40px 20px;
+  }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1200px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .hero-content {
+    padding: 0 20px;
+  }
+
+  .location-info-grid {
+    gap: 50px;
+  }
+
+  .services-grid {
+    gap: 50px;
+  }
+}
+
+/* Mobile Styles for Reviews */
+@media (max-width: 768px) {
+  .reviews-desktop {
+    display: none;
+  }
+
+  .reviews-mobile {
+    display: block;
+  }
+
+  .reviews-section {
+    padding: 40px 0;
+  }
+
+  .google-rating-card {
+    padding: 20px 25px;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .google-logo {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .rating-score {
+    font-size: 2rem;
+  }
+
+  .rating-stars {
+    font-size: 1.3rem;
+  }
+
+  .rating-count {
+    font-size: 0.85rem;
+  }
+}
+
+/* Extra Small Mobile Devices */
+@media (max-width: 360px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .hero-section {
+    padding: 40px 0;
+    min-height: 40vh;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+  }
+
+  .primary-button,
+  .secondary-button {
+    width: 180px;
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+
+  .location-details-section,
+  .reviews-section,
+  .contact-section {
+    padding: 40px 0;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+  }
+
+  .location-info-card {
+    padding: 25px 15px;
+  }
+
+  .location-info-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .location-info-card p {
+    font-size: 0.9rem;
+  }
+
+  .contact-item {
+    padding: 20px 15px;
+  }
+
+  .contact-item h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  .contact-item p {
+    font-size: 0.85rem;
+  }
+
+  .reviews-dropdown-toggle {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .review-card-mobile {
+    padding: 15px;
+  }
+
+  .review-card-mobile .review-text {
+    font-size: 0.85rem;
+  }
+}
+
+/* Address Section */
+.address-section {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.address-box {
+  text-align: center;
+  padding: 25px 30px;
+  border-radius: 15px;
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  max-width: 400px;
+  width: 100%;
+}
+
+.address-box h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.address-box p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.map-button {
+  background: linear-gradient(135deg, #4a90e2, #357abd);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.map-button:hover {
+  background: linear-gradient(135deg, #357abd, #2968a3);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(74, 144, 226, 0.3);
+}
+
+/* Tablet and Desktop Styles for Address Section */
+@media (min-width: 768px) {
+  .address-section {
+    margin-top: 40px;
+  }
+
+  .address-box {
+    padding: 30px 35px;
+  }
+
+  .address-box h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .address-box p {
+    font-size: 1rem;
+  }
+
+  .map-button {
+    padding: 15px 30px;
+    font-size: 16px;
+  }
+}

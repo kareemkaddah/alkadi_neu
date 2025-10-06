@@ -1,0 +1,380 @@
+/* Leistungen Styles - Mobile First Approach */
+.leistungen-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  padding-top: 0;
+  flex: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* Services Section */
+.services-section {
+  padding: 50px 0;
+  background: white;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+.service-card {
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 15px;
+  background: #f8f9fa;
+  transition: transform 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 50px 0;
+  background: #f8f9fa;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+.contact-item {
+  text-align: center;
+  padding: 30px 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #4a90e2;
+  margin-bottom: 15px;
+}
+
+.contact-item p {
+  color: #666;
+  margin-bottom: 8px;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.contact-button {
+  background: linear-gradient(135deg, #4a90e2, #357abd);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 200px;
+}
+
+.contact-button:hover {
+  background: linear-gradient(135deg, #357abd, #2968a3);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(74, 144, 226, 0.3);
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .hero-section {
+    padding: 80px 0;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 35px;
+  }
+
+  .services-section,
+  .contact-section {
+    padding: 70px 0;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .service-card {
+    padding: 35px 25px;
+  }
+
+  .service-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .service-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+
+  .service-card p {
+    font-size: 1rem;
+  }
+
+  .contact-info {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .contact-item {
+    padding: 35px 25px;
+  }
+
+  .contact-item h4 {
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+  }
+
+  .contact-item p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .contact-button {
+    padding: 12px 24px;
+    font-size: 14px;
+    margin-top: 18px;
+    width: auto;
+    max-width: none;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .hero-section {
+    padding: 100px 0;
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+  }
+
+  .services-section,
+  .contact-section {
+    padding: 80px 0;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  .service-card {
+    padding: 40px 20px;
+  }
+
+  .contact-info {
+    gap: 40px;
+  }
+
+  .contact-item {
+    padding: 40px 30px;
+  }
+
+  .contact-item h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .contact-item p {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+
+  .contact-button {
+    padding: 14px 28px;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1200px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .services-grid {
+    gap: 50px;
+  }
+
+  .contact-info {
+    gap: 50px;
+  }
+}
+
+/* Extra Small Mobile Devices */
+@media (max-width: 360px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .hero-section {
+    padding: 40px 0;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+  }
+
+  .services-section,
+  .contact-section {
+    padding: 40px 0;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+  }
+
+  .service-card {
+    padding: 25px 15px;
+  }
+
+  .service-icon {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+
+  .service-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .service-card p {
+    font-size: 0.9rem;
+  }
+
+  .contact-item {
+    padding: 25px 15px;
+  }
+
+  .contact-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+
+  .contact-item p {
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+  }
+
+  .contact-button {
+    padding: 8px 16px;
+    font-size: 12px;
+    margin-top: 12px;
+    max-width: 180px;
+  }
+}
