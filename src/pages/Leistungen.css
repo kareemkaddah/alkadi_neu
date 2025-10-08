@@ -97,6 +97,89 @@
   font-size: 0.95rem;
 }
 
+/* Erkrankungen Dropdown Styles */
+.erkrankungen-card {
+  cursor: default;
+  grid-column: 1 / -1;
+  max-width: 100%;
+}
+
+.erkrankungen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  padding: 0;
+}
+
+.erkrankungen-header:hover h3 {
+  color: #4a90e2;
+}
+
+.dropdown-icon {
+  font-size: 1.2rem;
+  color: #4a90e2;
+  transition: transform 0.3s ease;
+  margin-left: 10px;
+}
+
+.dropdown-icon.open {
+  transform: rotate(180deg);
+}
+
+.erkrankungen-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.erkrankungen-content.open {
+  max-height: 2000px;
+  margin-top: 20px;
+}
+
+.erkrankungen-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.erkrankungen-list li {
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  background: white;
+  border-left: 4px solid #4a90e2;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.erkrankungen-list li:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateX(5px);
+}
+
+.erkrankungen-list li:last-child {
+  margin-bottom: 0;
+}
+
+.erkrankungen-list strong {
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.erkrankungen-list .sub-info {
+  color: #666;
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 5px;
+  font-style: italic;
+}
+
 /* Contact Section */
 .contact-section {
   padding: 50px 0;
@@ -230,6 +313,18 @@
     width: auto;
     max-width: none;
   }
+
+  .erkrankungen-list li {
+    padding: 18px 25px;
+  }
+
+  .erkrankungen-list strong {
+    font-size: 1.05rem;
+  }
+
+  .erkrankungen-list .sub-info {
+    font-size: 0.95rem;
+  }
 }
 
 /* Desktop Styles */
@@ -292,6 +387,22 @@
     padding: 14px 28px;
     font-size: 15px;
     margin-top: 20px;
+  }
+
+  .erkrankungen-list li {
+    padding: 20px 30px;
+  }
+
+  .erkrankungen-list strong {
+    font-size: 1.1rem;
+  }
+
+  .erkrankungen-list .sub-info {
+    font-size: 1rem;
+  }
+
+  .dropdown-icon {
+    font-size: 1.4rem;
   }
 }
 
@@ -376,5 +487,21 @@
     font-size: 12px;
     margin-top: 12px;
     max-width: 180px;
+  }
+
+  .erkrankungen-list li {
+    padding: 12px 15px;
+  }
+
+  .erkrankungen-list strong {
+    font-size: 0.95rem;
+  }
+
+  .erkrankungen-list .sub-info {
+    font-size: 0.85rem;
+  }
+
+  .dropdown-icon {
+    font-size: 1rem;
   }
 }

@@ -145,7 +145,7 @@ const Footer: React.FC = () => {
 
       <div className='footer-bottom'>
         <div className='footer-bottom-content'>
-          <p>&copy; 2024 Praxis Musterstadt. Alle Rechte vorbehalten.</p>
+          <p>&copy; 2025 BAG Al-Kadi. Alle Rechte vorbehalten.</p>
           <div className='legal-links'>
             <Link to='/impressum' className='legal-link'>
               Impressum

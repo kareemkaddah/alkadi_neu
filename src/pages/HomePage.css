@@ -24,11 +24,12 @@
   text-align: center;
   position: relative;
   z-index: 1;
-  min-height: 50vh;
+  min-height: 75vh;
   width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: scroll;
 }
 
 .hero-section::before {
@@ -131,11 +132,12 @@
 
 .feature-card {
   text-align: center;
-  padding: 30px 20px;
+  padding: 0;
   border-radius: 15px;
   background: #f8f9fa;
   transition: transform 0.3s ease;
   border: 1px solid #e9ecef;
+  overflow: hidden;
 }
 
 .feature-card:hover {
@@ -143,22 +145,43 @@
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
-.feature-icon {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
+.feature-image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  display: block;
+  line-height: 0;
+}
+
+.feature-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.feature-card:hover .feature-image img {
+  transform: scale(1.05);
 }
 
 .feature-card h3 {
   font-size: 1.3rem;
   font-weight: 600;
   color: #333;
-  margin-bottom: 12px;
+  margin: 20px 0 12px 0;
+  padding: 0 20px;
 }
 
 .feature-card p {
   color: #666;
   line-height: 1.6;
   font-size: 0.95rem;
+  padding: 0 20px 30px 20px;
 }
 
 .features-button-container {
@@ -375,6 +398,7 @@
   .hero-section {
     padding: 80px 0;
     min-height: 60vh;
+    background-attachment: fixed;
   }
 
   .hero-title {
@@ -415,22 +439,19 @@
     gap: 30px;
   }
 
-  .feature-card {
-    padding: 35px 25px;
-  }
-
-  .feature-icon {
-    font-size: 3rem;
-    margin-bottom: 20px;
+  .feature-image {
+    height: 200px;
   }
 
   .feature-card h3 {
     font-size: 1.4rem;
-    margin-bottom: 15px;
+    margin: 25px 0 15px 0;
+    padding: 0 25px;
   }
 
   .feature-card p {
     font-size: 1rem;
+    padding: 0 25px 35px 25px;
   }
 
   .locations-grid {
@@ -613,22 +634,19 @@
     margin-bottom: 30px;
   }
 
-  .feature-card {
-    padding: 25px 15px;
-  }
-
-  .feature-icon {
-    font-size: 2rem;
-    margin-bottom: 12px;
+  .feature-image {
+    height: 150px;
   }
 
   .feature-card h3 {
     font-size: 1.2rem;
-    margin-bottom: 10px;
+    margin: 15px 0 10px 0;
+    padding: 0 15px;
   }
 
   .feature-card p {
     font-size: 0.9rem;
+    padding: 0 15px 25px 15px;
   }
 
   .location-content {

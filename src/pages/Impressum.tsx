@@ -26,22 +26,24 @@ const Impressum: React.FC<ImpressumProps> = ({ onLocationSelect }) => {
               <h2>Anbieter</h2>
               <div className='contact-info'>
                 <p>
-                  <strong>Praxis Musterstadt</strong>
+                  <strong>BAG Al-Kadi</strong>
                 </p>
-                <p>Dr. med. Max Mustermann</p>
-                <p>Facharzt für Allgemeinmedizin</p>
+                <p>Berufsausübungsgemeinschaft</p>
+                <p>Fachärzte für Neurologie</p>
                 <br />
                 <p>
-                  <strong>Praxis Stadtmitte:</strong>
+                  <strong>Praxis Recklinghausen:</strong>
                 </p>
-                <p>Hauptstraße 123</p>
-                <p>12345 Musterstadt</p>
+                <p>Dr. med. Assad Al Kadi</p>
+                <p>Bochumer Straße 124A</p>
+                <p>45661 Recklinghausen</p>
                 <br />
                 <p>
-                  <strong>Praxis Nord:</strong>
+                  <strong>Praxis Oer-Erkenschwick:</strong>
                 </p>
-                <p>Nordstraße 456</p>
-                <p>12345 Musterstadt</p>
+                <p>Dr. Hazem Al Kadi</p>
+                <p>Konrad-Adenauer-Straße 13</p>
+                <p>45739 Oer-Erkenschwick</p>
               </div>
             </section>
 
@@ -49,16 +51,17 @@ const Impressum: React.FC<ImpressumProps> = ({ onLocationSelect }) => {
               <h2>Kontakt</h2>
               <div className='contact-details'>
                 <p>
-                  <strong>Telefon:</strong> (0123) 456-789
+                  <strong>Praxis Recklinghausen</strong>
                 </p>
                 <p>
-                  <strong>Fax:</strong> (0123) 456-788
+                  <strong>Telefon:</strong> 02361 653962
+                </p>
+                <br />
+                <p>
+                  <strong>Praxis Oer-Erkenschwick</strong>
                 </p>
                 <p>
-                  <strong>E-Mail:</strong> info@praxis-musterstadt.de
-                </p>
-                <p>
-                  <strong>Website:</strong> www.praxis-musterstadt.de
+                  <strong>Telefon:</strong> 02368 8920049
                 </p>
               </div>
             </section>
@@ -66,9 +69,9 @@ const Impressum: React.FC<ImpressumProps> = ({ onLocationSelect }) => {
             <section className='section'>
               <h2>Berufsbezeichnung und berufsrechtliche Regelungen</h2>
               <p>
-                <strong>Berufsbezeichnung:</strong> Arzt
+                <strong>Berufsbezeichnung:</strong> Facharzt für Neurologie
                 <br />
-                <strong>Zuständige Kammer:</strong> Ärztekammer Musterland
+                <strong>Zuständige Kammer:</strong> Ärztekammer Westfalen-Lippe
                 <br />
                 <strong>Verliehen in:</strong> Deutschland
               </p>
@@ -82,36 +85,36 @@ const Impressum: React.FC<ImpressumProps> = ({ onLocationSelect }) => {
             <section className='section'>
               <h2>Umsatzsteuer-ID</h2>
               <p>
-                Umsatzsteuer-Identifikationsnummer gemäß § 27 a
-                Umsatzsteuergesetz:
-                <br />
-                <strong>DE 123456789</strong>
+                Gemäß § 4 Nr. 14 UStG sind ärztliche Leistungen von der
+                Umsatzsteuer befreit.
               </p>
             </section>
 
             <section className='section'>
               <h2>Aufsichtsbehörde</h2>
               <p>
-                <strong>Ärztekammer Musterland</strong>
+                <strong>Ärztekammer Westfalen-Lippe</strong>
                 <br />
-                Musterstraße 123
+                Gartenstraße 210-214
                 <br />
-                12345 Musterstadt
+                48147 Münster
                 <br />
-                Telefon: (0123) 987-654
+                Telefon: 0251 929-0
                 <br />
-                E-Mail: info@aek-musterland.de
+                E-Mail: kontakt@aekwl.de
+                <br />
+                Website: www.aekwl.de
               </p>
             </section>
 
             <section className='section'>
               <h2>Redaktionell verantwortlich</h2>
               <p>
-                Dr. med. Max Mustermann
+                Dr. med. Assad Al Kadi
                 <br />
-                Hauptstraße 123
+                Bochumer Straße 124A
                 <br />
-                12345 Musterstadt
+                45661 Recklinghausen
               </p>
             </section>
 

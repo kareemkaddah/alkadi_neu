@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import alkadiNeuImage from '../assets/alkadi_neu.png';
+import brainImage from '../assets/brain.png';
 import useScrollToTop from '../hooks/useScrollToTop';
 import './HomePage.css';
 
@@ -31,14 +32,10 @@ const HomePage: React.FC<HomePageProps> = ({ onLocationSelect }) => {
           className='hero-section'
           style={{
             backgroundImage: `url(${alkadiNeuImage})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            backgroundAttachment: 'fixed',
           }}
         >
           <div className='hero-content'>
-            <h1 className='hero-title'>Willkommen in unserer Praxis</h1>
+            <h1 className='hero-title'>Willkommen bei BAG Al-Kadi</h1>
             <p className='hero-subtitle'>
               Professionelle medizinische Betreuung für Ihre Gesundheit
             </p>
@@ -57,30 +54,36 @@ const HomePage: React.FC<HomePageProps> = ({ onLocationSelect }) => {
         {/* Features Section */}
         <section className='features-section'>
           <div className='container'>
-            <h2 className='section-title'>Was uns wichtig ist</h2>
+            <h2 className='section-title'>Unsere Leistungen</h2>
             <div className='features-grid'>
               <div className='feature-card'>
-                <div className='feature-icon'>⏰</div>
-                <h3>Zeit für Sie</h3>
+                <div className='feature-image'>
+                  <img src={brainImage} alt='Neurologische Untersuchung' />
+                </div>
+                <h3>Neurologische Untersuchung</h3>
                 <p>
-                  Wir nehmen uns Zeit für Ihre Anliegen – mit Ruhe, Verständnis
-                  und persönlicher Betreuung.
+                  Umfassende neurologische Untersuchung zur Diagnose von
+                  Erkrankungen des Nervensystems.
                 </p>
               </div>
               <div className='feature-card'>
-                <div className='feature-icon'>👨‍⚕️</div>
-                <h3>Kompetenz & Erfahrung</h3>
+                <div className='feature-image'>
+                  <img src={brainImage} alt='EEG' />
+                </div>
+                <h3>EEG (Elektroenzephalographie)</h3>
                 <p>
-                  Vater und Sohn, zwei Fachärzte für Neurologie – vereint durch
-                  Erfahrung und Engagement.
+                  Messung der elektrischen Aktivität des Gehirns zur Diagnose
+                  von Epilepsie und anderen Erkrankungen.
                 </p>
               </div>
               <div className='feature-card'>
-                <div className='feature-icon'>👨‍⚕️</div>
-                <h3>Kompetenz & Erfahrung</h3>
+                <div className='feature-image'>
+                  <img src={brainImage} alt='EMG' />
+                </div>
+                <h3>EMG (Elektromyographie)</h3>
                 <p>
-                  Vater und Sohn, zwei Fachärzte für Neurologie – vereint durch
-                  Erfahrung und Engagement.
+                  Untersuchung der Muskelfunktion und Nervenleitung zur Diagnose
+                  von Muskelerkrankungen.
                 </p>
               </div>
             </div>
@@ -89,7 +92,7 @@ const HomePage: React.FC<HomePageProps> = ({ onLocationSelect }) => {
                 className='features-button'
                 onClick={() => (window.location.href = '/leistungen')}
               >
-                Unsere Leistungen
+                Alle Leistungen
               </button>
             </div>
           </div>
@@ -139,7 +142,7 @@ const HomePage: React.FC<HomePageProps> = ({ onLocationSelect }) => {
                     <button
                       className='location-button info-button'
                       onClick={() => {
-                        /* Add info functionality */
+                        window.location.href = '/recklinghausen';
                       }}
                     >
                       Info
@@ -189,7 +192,7 @@ const HomePage: React.FC<HomePageProps> = ({ onLocationSelect }) => {
                     <button
                       className='location-button info-button'
                       onClick={() => {
-                        /* Add info functionality */
+                        window.location.href = '/oer-erkenschwick';
                       }}
                     >
                       Info
