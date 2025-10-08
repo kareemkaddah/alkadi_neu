@@ -3,6 +3,8 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import alkadiNeuImage from '../assets/alkadi_neu.png';
 import brainImage from '../assets/brain.png';
+import drAssadImage from '../assets/Dr-Assad.jpeg';
+import drHazemImage from '../assets/Dr-Hazem.jpeg';
 import useScrollToTop from '../hooks/useScrollToTop';
 import './HomePage.css';
 
@@ -105,10 +107,7 @@ const HomePage: React.FC<HomePageProps> = ({ onLocationSelect }) => {
             <div className='locations-grid'>
               <div className='location-card'>
                 <div className='location-image'>
-                  <img
-                    src='/src/assets/Dr-Assad.jpeg'
-                    alt='Dr. Assad - Praxis Stadtmitte'
-                  />
+                  <img src={drAssadImage} alt='Dr. Assad - Praxis Stadtmitte' />
                 </div>
                 <div className='location-content'>
                   <h3>Dr. med. Assad Al Kadi</h3>
@@ -163,10 +162,7 @@ const HomePage: React.FC<HomePageProps> = ({ onLocationSelect }) => {
               </div>
               <div className='location-card location-card-hazem'>
                 <div className='location-image'>
-                  <img
-                    src='/src/assets/Dr-Hazem.jpeg'
-                    alt='Dr. Hazem - Praxis Nord'
-                  />
+                  <img src={drHazemImage} alt='Dr. Hazem - Praxis Nord' />
                 </div>
                 <div className='location-content'>
                   <h3>Dr. Hazem Al Kadi</h3>

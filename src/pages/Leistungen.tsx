@@ -32,10 +32,6 @@ const Leistungen: React.FC<LeistungenProps> = ({ onLocationSelect }) => {
           className='hero-section'
           style={{
             backgroundImage: `url(${alkadiNeuImage})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            backgroundAttachment: 'fixed',
           }}
         >
           <div className='hero-content'>
