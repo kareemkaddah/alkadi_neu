@@ -16,36 +16,39 @@
   justify-content: space-between;
   align-items: center;
   height: 70px;
+  position: relative;
 }
 
 /* Logo Styles */
 .logo-container {
   flex-shrink: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .logo-link {
   display: block;
   text-decoration: none;
+  cursor: pointer;
 }
 
-.logo-text {
-  font-size: 18px;
-  font-weight: 700;
-  color: #666;
-  text-align: center;
-  letter-spacing: 1px;
-  background-color: #f0f0f0;
-  border: 2px dashed #ccc;
-  border-radius: 8px;
-  padding: 8px 16px;
-  min-width: 80px;
+.logo-box {
+  width: 50px;
+  height: 50px;
+  background-color: #000000;
+  border-radius: 4px;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.logo-text:hover {
-  background-color: #e8f4fd;
-  border-color: #357abd;
-  transform: scale(1.02);
+.logo-box:hover {
+  background-color: #333333;
+  transform: scale(1.05);
+}
+
+.logo-box:active {
+  transform: scale(0.95);
 }
 
 /* Desktop Navigation - Hidden on Mobile */
@@ -388,10 +391,15 @@
     height: 80px;
   }
 
-  .logo-text {
-    font-size: 20px;
-    padding: 10px 20px;
-    min-width: 100px;
+  .logo-container {
+    position: static;
+    transform: none;
+    margin-left: 20px;
+  }
+
+  .logo-box {
+    width: 60px;
+    height: 60px;
   }
 
   .mobile-menu-button {
@@ -416,6 +424,15 @@
     padding: 0 30px;
   }
 
+  .logo-container {
+    margin-left: 30px;
+  }
+
+  .logo-box {
+    width: 65px;
+    height: 65px;
+  }
+
   .desktop-navigation .nav-list {
     gap: 30px;
   }
@@ -436,10 +453,13 @@
     padding: 0 40px;
   }
 
-  .logo-text {
-    font-size: 22px;
-    padding: 12px 24px;
-    min-width: 120px;
+  .logo-container {
+    margin-left: 40px;
+  }
+
+  .logo-box {
+    width: 70px;
+    height: 70px;
   }
 
   .desktop-navigation .nav-list {
@@ -459,10 +479,9 @@
     height: 65px;
   }
 
-  .logo-text {
-    font-size: 16px;
-    padding: 6px 12px;
-    min-width: 70px;
+  .logo-box {
+    width: 45px;
+    height: 45px;
   }
 
   .mobile-navigation {

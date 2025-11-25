@@ -60,7 +60,7 @@ const Header: React.FC<HeaderProps> = () => {
         {/* Logo */}
         <div className='logo-container'>
           <Link to='/' className='logo-link' onClick={closeMenus}>
-            <div className='logo-text'>LOGO</div>
+            <div className='logo-box'></div>
           </Link>
         </div>
 

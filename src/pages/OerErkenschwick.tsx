@@ -94,9 +94,7 @@ const OerErkenschwick: React.FC<OerErkenschwickProps> = ({
         >
           <div className='hero-content'>
             <h1 className='hero-title'>Praxis Oer-Erkenschwick</h1>
-            <p className='hero-subtitle'>
-              Dr. Hazem Al Kadi - Neurologie im Norden
-            </p>
+            <p className='hero-subtitle'>Hazem AlKadi</p>
             <div className='hero-buttons'>
               <button
                 className='primary-button'
@@ -133,7 +131,7 @@ const OerErkenschwick: React.FC<OerErkenschwickProps> = ({
               </div>
               <div className='location-info-grid'>
                 <div className='location-info-card'>
-                  <h3>Dr. Hazem Al Kadi</h3>
+                  <h3>Hazem AlKadi</h3>
                   <p>Facharzt für Neurologie</p>
                   <p>Mit modernster Ausstattung und persönlicher Betreuung</p>
                 </div>
