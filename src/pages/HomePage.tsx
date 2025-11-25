@@ -56,46 +56,20 @@ const HomePage: React.FC<HomePageProps> = ({ onLocationSelect }) => {
         {/* Features Section */}
         <section className='features-section'>
           <div className='container'>
-            <h2 className='section-title'>Unsere Leistungen</h2>
-            <div className='features-grid'>
-              <div className='feature-card'>
-                <div className='feature-image'>
-                  <img src={brainImage} alt='Neurologische Untersuchung' />
-                </div>
-                <h3>Neurologische Untersuchung</h3>
-                <p>
-                  Umfassende neurologische Untersuchung zur Diagnose von
-                  Erkrankungen des Nervensystems.
-                </p>
-              </div>
-              <div className='feature-card'>
-                <div className='feature-image'>
-                  <img src={brainImage} alt='EEG' />
-                </div>
-                <h3>EEG (Elektroenzephalographie)</h3>
-                <p>
-                  Messung der elektrischen Aktivität des Gehirns zur Diagnose
-                  von Epilepsie und anderen Erkrankungen.
-                </p>
-              </div>
-              <div className='feature-card'>
-                <div className='feature-image'>
-                  <img src={brainImage} alt='EMG' />
-                </div>
-                <h3>EMG (Elektromyographie)</h3>
-                <p>
-                  Untersuchung der Muskelfunktion und Nervenleitung zur Diagnose
-                  von Muskelerkrankungen.
-                </p>
-              </div>
-            </div>
-            <div className='features-button-container'>
-              <button
-                className='features-button'
-                onClick={() => (window.location.href = '/leistungen')}
-              >
-                Alle Leistungen
-              </button>
+            <h2 className='section-title'>Willkommen in der neurologischen Gemeinschaftspraxis BAG Alkadi</h2>
+            <div className='welcome-content'>
+              <p>
+                In unserer Praxis legen wir großen Wert auf eine ruhige, vertrauensvolle und persönliche Atmosphäre. Jeder Patient steht bei uns im Mittelpunkt – mit seinen individuellen Beschwerden, Fragen und Bedürfnissen.
+              </p>
+              <p>
+                Wir bieten umfassende Diagnostik und moderne Behandlungsmethoden bei akuten und chronischen neurologischen Erkrankungen. Dabei kombinieren wir fachliche Kompetenz mit menschlicher Nähe, um die bestmögliche Versorgung zu gewährleisten.
+              </p>
+              <p>
+                Unser Ziel ist es, Ihre Gesundheit nachhaltig zu fördern und Sie auf dem Weg zur Besserung professionell zu begleiten.
+              </p>
+              <p>
+                Wir freuen uns, Sie bald persönlich in unserer Praxis begrüßen zu dürfen.
+              </p>
             </div>
           </div>
         </section>

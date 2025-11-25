@@ -41,6 +41,10 @@
   border-radius: 8px;
 }
 
+.contact-item h5 {
+  color: #000000;
+}
+
 .contact-item p {
   margin-bottom: 4px;
   font-size: 0.85rem;
@@ -74,7 +78,7 @@
   font-size: 0.9rem;
   font-weight: 600;
   margin-bottom: 8px;
-  color: white;
+  color: #ffffff !important;
   text-align: center;
 }
 
@@ -231,7 +235,7 @@
   .doctor-hours h5 {
     font-size: 1rem;
     margin-bottom: 10px;
-    color: white;
+    color: #ffffff !important;
     text-align: left;
   }
 
@@ -332,7 +336,7 @@
   .doctor-hours h5 {
     font-size: 1.1rem;
     margin-bottom: 12px;
-    color: white;
+    color: #ffffff !important;
   }
 
   .doctor-hours {
