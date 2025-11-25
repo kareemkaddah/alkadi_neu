@@ -18,7 +18,7 @@ const Datenschutz: React.FC<DatenschutzProps> = ({ onLocationSelect }) => {
         <div className='container'>
           <div className='page-header'>
             <h1>Datenschutzerklärung</h1>
-            <p className='last-updated'>Letzte Aktualisierung: Januar 2024</p>
+            <p className='last-updated'>Letzte Aktualisierung: November 2025</p>
           </div>
 
           <div className='content'>
@@ -30,12 +30,12 @@ const Datenschutz: React.FC<DatenschutzProps> = ({ onLocationSelect }) => {
               </p>
               <div className='contact-info'>
                 <p>
-                  <strong>Praxis Musterstadt</strong>
+                  <strong>BAG Alkadi</strong>
                 </p>
-                <p>Hauptstraße 123</p>
-                <p>12345 Musterstadt</p>
-                <p>Telefon: (0123) 456-789</p>
-                <p>E-Mail: info@praxis-musterstadt.de</p>
+                <p>45661 Recklinghausen </p>
+                <p>Bochumer Straße 124A </p>
+                <p>Telefon: 02361 653962</p>
+                <p>E-Mail: </p>
               </div>
             </section>
 

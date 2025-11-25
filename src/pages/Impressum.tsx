@@ -41,7 +41,7 @@ const Impressum: React.FC<ImpressumProps> = ({ onLocationSelect }) => {
                 <p>
                   <strong>Praxis Oer-Erkenschwick:</strong>
                 </p>
-                <p>Dr. Hazem Al Kadi</p>
+                <p>Hazem AlKadi</p>
                 <p>Konrad-Adenauer-Straße 13</p>
                 <p>45739 Oer-Erkenschwick</p>
               </div>
