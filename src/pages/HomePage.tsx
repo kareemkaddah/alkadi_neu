@@ -2,7 +2,6 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import alkadiNeuImage from '../assets/alkadi_neu.png';
-import brainImage from '../assets/brain.png';
 import drAssadImage from '../assets/Dr-Assad.jpeg';
 import drHazemImage from '../assets/Dr-Hazem.jpeg';
 import useScrollToTop from '../hooks/useScrollToTop';
@@ -56,19 +55,29 @@ const HomePage: React.FC<HomePageProps> = ({ onLocationSelect }) => {
         {/* Features Section */}
         <section className='features-section'>
           <div className='container'>
-            <h2 className='section-title'>Willkommen in der neurologischen Gemeinschaftspraxis BAG Alkadi</h2>
+            <h2 className='section-title'>
+              Willkommen in der neurologischen Gemeinschaftspraxis BAG Alkadi
+            </h2>
             <div className='welcome-content'>
               <p>
-                In unserer Praxis legen wir großen Wert auf eine ruhige, vertrauensvolle und persönliche Atmosphäre. Jeder Patient steht bei uns im Mittelpunkt – mit seinen individuellen Beschwerden, Fragen und Bedürfnissen.
+                In unserer Praxis legen wir großen Wert auf eine ruhige,
+                vertrauensvolle und persönliche Atmosphäre. Jeder Patient steht
+                bei uns im Mittelpunkt – mit seinen individuellen Beschwerden,
+                Fragen und Bedürfnissen.
               </p>
               <p>
-                Wir bieten umfassende Diagnostik und moderne Behandlungsmethoden bei akuten und chronischen neurologischen Erkrankungen. Dabei kombinieren wir fachliche Kompetenz mit menschlicher Nähe, um die bestmögliche Versorgung zu gewährleisten.
+                Wir bieten umfassende Diagnostik und moderne Behandlungsmethoden
+                bei akuten und chronischen neurologischen Erkrankungen. Dabei
+                kombinieren wir fachliche Kompetenz mit menschlicher Nähe, um
+                die bestmögliche Versorgung zu gewährleisten.
               </p>
               <p>
-                Unser Ziel ist es, Ihre Gesundheit nachhaltig zu fördern und Sie auf dem Weg zur Besserung professionell zu begleiten.
+                Unser Ziel ist es, Ihre Gesundheit nachhaltig zu fördern und Sie
+                auf dem Weg zur Besserung professionell zu begleiten.
               </p>
               <p>
-                Wir freuen uns, Sie bald persönlich in unserer Praxis begrüßen zu dürfen.
+                Wir freuen uns, Sie bald persönlich in unserer Praxis begrüßen
+                zu dürfen.
               </p>
             </div>
           </div>
