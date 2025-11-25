@@ -237,7 +237,7 @@ const Leistungen: React.FC<LeistungenProps> = ({ onLocationSelect }) => {
             <h2 className='section-title'>Termin vereinbaren</h2>
             <div className='contact-info'>
               <div className='contact-item'>
-                <h4>Dr. med. Assad Al Kadi</h4>
+                <h4>Recklinghausen</h4>
                 <p>Bochumer Straße 124A, 45661 Recklinghausen</p>
                 <p>Tel: 02361 653962</p>
                 <button
@@ -248,7 +248,7 @@ const Leistungen: React.FC<LeistungenProps> = ({ onLocationSelect }) => {
                 </button>
               </div>
               <div className='contact-item'>
-                <h4>Dr. Hazem Al Kadi</h4>
+                <h4>Oer-Erkenschwick</h4>
                 <p>Konrad-Adenauer-Straße 13, 45739 Oer-Erkenschwick</p>
                 <p>Tel: 02368 8920049</p>
                 <button

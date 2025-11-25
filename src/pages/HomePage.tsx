@@ -37,7 +37,7 @@ const HomePage: React.FC<HomePageProps> = ({ onLocationSelect }) => {
           }}
         >
           <div className='hero-content'>
-            <h1 className='hero-title'>Willkommen bei BAG Al-Kadi</h1>
+            <h1 className='hero-title'>Willkommen bei BAG Alkadi</h1>
             <p className='hero-subtitle'>
               Professionelle medizinische Betreuung für Ihre Gesundheit
             </p>
@@ -165,7 +165,7 @@ const HomePage: React.FC<HomePageProps> = ({ onLocationSelect }) => {
                   <img src={drHazemImage} alt='Dr. Hazem - Praxis Nord' />
                 </div>
                 <div className='location-content'>
-                  <h3>Dr. Hazem Al Kadi</h3>
+                  <h3>Hazem Alkadi</h3>
                   <p>
                     Konrad-Adenauer-Straße 13,
                     <br />
@@ -217,7 +217,7 @@ const HomePage: React.FC<HomePageProps> = ({ onLocationSelect }) => {
             <h2 className='section-title'>Kontaktieren Sie uns</h2>
             <div className='contact-info'>
               <div className='contact-item'>
-                <h4>Dr. med. Assad Al Kadi</h4>
+                <h4>Recklinghausen</h4>
                 <p>
                   <a href='tel:02361653962' className='phone-link'>
                     02361 653962
@@ -225,7 +225,7 @@ const HomePage: React.FC<HomePageProps> = ({ onLocationSelect }) => {
                 </p>
               </div>
               <div className='contact-item'>
-                <h4>Dr. Hazem Al Kadi</h4>
+                <h4>Oer-Erkenschwick</h4>
                 <p>
                   <a href='tel:023688920049' className='phone-link'>
                     02368 8920049

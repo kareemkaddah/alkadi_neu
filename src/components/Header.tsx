@@ -121,7 +121,7 @@ const Header: React.FC<HeaderProps> = () => {
                     )
                   }
                 >
-                  Dr. med. Assad Al Kadi
+                  Recklinghausen
                 </button>
                 <button
                   className='dropdown-item'
@@ -132,7 +132,7 @@ const Header: React.FC<HeaderProps> = () => {
                     )
                   }
                 >
-                  Dr. Hazem Al Kadi
+                  Oer-Erkenschwick
                 </button>
               </div>
             )}
@@ -212,7 +212,7 @@ const Header: React.FC<HeaderProps> = () => {
                     )
                   }
                 >
-                  Praxis Stadtmitte
+                  Recklinghausen
                 </button>
                 <button
                   className='mobile-appointment-button'
@@ -223,7 +223,7 @@ const Header: React.FC<HeaderProps> = () => {
                     )
                   }
                 >
-                  Praxis Nord
+                  Oer-Erkenschwick
                 </button>
               </div>
             </div>

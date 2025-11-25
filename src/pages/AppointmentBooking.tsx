@@ -47,13 +47,13 @@ const AppointmentBooking: React.FC<AppointmentBookingProps> = ({
   const getLocationInfo = (location: string) => {
     const locations = {
       stadtmitte: {
-        name: 'Dr. med. Assad Al Kadi',
+        name: 'Recklinghausen',
         address: 'Hauptstraße 123, 12345 Musterstadt',
         phone: '(0123) 456-789',
         email: 'info-stadtmitte@praxis.de',
       },
       nord: {
-        name: 'Dr. Hazem Al Kadi',
+        name: 'Oer-Erkenschwick',
         address: 'Nordstraße 456, 12345 Musterstadt',
         phone: '(0123) 456-790',
         email: 'info-nord@praxis.de',
