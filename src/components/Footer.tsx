@@ -43,12 +43,14 @@ const Footer: React.FC = () => {
               <p>📍 Bochumer Straße 124A</p>
               <p>45661 Recklinghausen</p>
               <p>📞 02361 653962</p>
+              <p>📠 02361 657519</p>
             </div>
             <div className='contact-item'>
               <h5>Oer-Erkenschwick</h5>
               <p>📍 Konrad-Adenauer-Straße 13</p>
               <p>45739 Oer-Erkenschwick</p>
               <p>📞 02368 8920049</p>
+              <p>📠 02368 8920048</p>
             </div>
           </div>
         </div>

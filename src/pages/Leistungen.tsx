@@ -240,23 +240,27 @@ const Leistungen: React.FC<LeistungenProps> = ({ onLocationSelect }) => {
                 <h4>Recklinghausen</h4>
                 <p>Bochumer Straße 124A, 45661 Recklinghausen</p>
                 <p>Tel: 02361 653962</p>
-                <button
+                <a
+                  href='https://www.doctolib.de/neurologie/recklinghausen/assad-alkadi'
                   className='contact-button'
-                  onClick={() => onLocationSelect('Recklinghausen')}
+                  target='_blank'
+                  rel='noopener noreferrer'
                 >
                   Termin buchen
-                </button>
+                </a>
               </div>
               <div className='contact-item'>
                 <h4>Oer-Erkenschwick</h4>
                 <p>Konrad-Adenauer-Straße 13, 45739 Oer-Erkenschwick</p>
                 <p>Tel: 02368 8920049</p>
-                <button
+                <a
+                  href='https://www.doctolib.de/einzelpraxis/oer-erkenschwick/neurologiepraxis-dr-alkadi?pid=practice-541381&utm_source=google_appointment_redirect&utm_campaign=gmb&utm_medium=organic&hl=en-DE&gei=-tZqaOH2N--sxc8PmqHj8AM&rwg_token=ACgRB3fIYmRhI1ib8gqsCRTFIg0C_lv9tP8x0CxMnr1rxa_xL_A5NL7uwS8trBL8uNOC8jPXBeoauSnb0WasJlooxzx9qm16cw%3D%3D'
                   className='contact-button'
-                  onClick={() => onLocationSelect('Oer-Erkenschwick')}
+                  target='_blank'
+                  rel='noopener noreferrer'
                 >
                   Termin buchen
-                </button>
+                </a>
               </div>
             </div>
           </div>
