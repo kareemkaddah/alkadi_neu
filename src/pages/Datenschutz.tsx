@@ -10,6 +10,7 @@ interface DatenschutzProps {
 
 const Datenschutz: React.FC<DatenschutzProps> = ({ onLocationSelect }) => {
   useScrollToTop();
+
   return (
     <div className='datenschutz-page'>
       <Header onLocationSelect={onLocationSelect} />
@@ -18,182 +19,193 @@ const Datenschutz: React.FC<DatenschutzProps> = ({ onLocationSelect }) => {
         <div className='container'>
           <div className='page-header'>
             <h1>Datenschutzerklärung</h1>
-            <p className='last-updated'>Letzte Aktualisierung: November 2025</p>
+            <p className='last-updated'>Stand: Januar 2026</p>
           </div>
 
           <div className='content'>
+            {/* 1. Verantwortlicher */}
             <section className='section'>
               <h2>1. Verantwortlicher</h2>
               <p>
-                Verantwortlicher für die Datenverarbeitung auf dieser Website
-                ist:
+                Verantwortlich für die Datenverarbeitung auf dieser Website:
               </p>
-              <div className='contact-info'>
-                <p>
-                  <strong>BAG Alkadi</strong>
-                </p>
-                <p>45661 Recklinghausen </p>
-                <p>Bochumer Straße 124A </p>
-                <p>Telefon: 02361 653962</p>
-                <p>E-Mail: </p>
-              </div>
-            </section>
-
-            <section className='section'>
-              <h2>2. Allgemeine Hinweise zur Datenverarbeitung</h2>
               <p>
-                Der Schutz Ihrer persönlichen Daten ist uns ein besonderes
-                Anliegen. Diese Datenschutzerklärung informiert Sie über die
-                Art, den Umfang und Zweck der Verarbeitung von personenbezogenen
-                Daten auf unserer Website.
+                <strong>BAG Al-Kadi</strong>
+                <br />
+                Berufsausübungsgemeinschaft
+                <br />
+                Bochumer Straße 124A
+                <br />
+                45661 Recklinghausen
+                <br />
+                Telefon: 02361 653962
+                <br />
+                E-Mail: info@IHRE-DOMAIN.de
               </p>
             </section>
 
+            {/* 2. Allgemeine Hinweise */}
             <section className='section'>
-              <h2>3. Erhebung und Speicherung personenbezogener Daten</h2>
-              <h3>3.1 Terminbuchung</h3>
+              <h2>2. Allgemeine Hinweise</h2>
               <p>
-                Bei der Buchung eines Termins über unsere Website erheben wir
-                folgende Daten:
+                Der Schutz Ihrer personenbezogenen Daten ist uns ein wichtiges
+                Anliegen. Personenbezogene Daten werden auf dieser Website nur
+                im notwendigen Umfang und gemäß den gesetzlichen
+                Datenschutzvorschriften verarbeitet.
               </p>
-              <ul>
-                <li>Name und Vorname</li>
-                <li>E-Mail-Adresse</li>
-                <li>Telefonnummer</li>
-                <li>Gewünschtes Datum und Uhrzeit</li>
-                <li>Art der gewünschten Leistung</li>
-                <li>Optionale Nachricht</li>
-              </ul>
-              <p>
-                Diese Daten werden ausschließlich zur Terminvereinbarung und
-                Kommunikation mit Ihnen verwendet.
-              </p>
+            </section>
 
-              <h3>3.2 Website-Besuch</h3>
+            {/* 3. Hosting */}
+            <section className='section'>
+              <h2>3. Hosting</h2>
               <p>
-                Bei jedem Besuch unserer Website werden automatisch folgende
-                Informationen erfasst:
+                Diese Website wird bei folgendem Hosting-Anbieter betrieben:
+              </p>
+              <p>
+                <strong>Vercel Inc.</strong>
+                <br />
+                440 N Barranca Ave #4133
+                <br />
+                Covina, CA 91723
+                <br />
+                USA
+              </p>
+              <p>
+                Der Einsatz von Vercel erfolgt auf Grundlage von
+                Standardvertragsklauseln der EU-Kommission.
+              </p>
+              <p>
+                Dabei werden personenbezogene Daten (z. B. IP-Adressen,
+                Server-Logfiles) verarbeitet, die für den technischen Betrieb
+                der Website erforderlich sind.
+              </p>
+              <p>
+                <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO
+              </p>
+            </section>
+
+            {/* 4. Server-Logfiles */}
+            <section className='section'>
+              <h2>4. Server-Logfiles</h2>
+              <p>
+                Beim Aufruf dieser Website werden automatisch folgende Daten
+                erfasst:
               </p>
               <ul>
                 <li>IP-Adresse</li>
                 <li>Datum und Uhrzeit des Zugriffs</li>
-                <li>Name und URL der aufgerufenen Datei</li>
-                <li>Übertragene Datenmenge</li>
-                <li>Meldung über erfolgreichen Abruf</li>
-                <li>Browsertyp und -version</li>
-                <li>Betriebssystem</li>
+                <li>Browsertyp und Betriebssystem</li>
+                <li>Referrer-URL</li>
               </ul>
+              <p>
+                Diese Daten dienen der Sicherstellung eines störungsfreien
+                Betriebs der Website.
+              </p>
+              <p>
+                <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO
+              </p>
             </section>
 
+            {/* 5. Kontakt per E-Mail */}
             <section className='section'>
-              <h2>4. Zweck der Datenverarbeitung</h2>
+              <h2>5. Kontaktaufnahme per E-Mail</h2>
               <p>
-                Wir verarbeiten Ihre personenbezogenen Daten zu folgenden
-                Zwecken:
+                Wenn Sie uns per E-Mail kontaktieren, werden the übermittelten
+                Daten ausschließlich zur Bearbeitung Ihrer Anfrage verarbeitet.
               </p>
+              <p>
+                <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO
+              </p>
+            </section>
+
+            {/* 6. Doctolib */}
+            <section className='section'>
+              <h2>6. Online-Terminbuchung über Doctolib</h2>
+              <p>
+                Für die Online-Terminbuchung nutzen wir den Dienst{' '}
+                <strong>Doctolib</strong>. Bei Nutzung dieses Dienstes werden
+                personenbezogene Daten direkt an Doctolib übermittelt.
+              </p>
+              <p>
+                Anbieter:
+                <br />
+                Doctolib GmbH
+                <br />
+                Mehringdamm 51
+                <br />
+                10961 Berlin
+              </p>
+              <p>
+                Die Datenverarbeitung erfolgt in eigener Verantwortung von
+                Doctolib. Weitere Informationen finden Sie in der
+                Datenschutzerklärung von Doctolib.
+              </p>
+              <p>
+                <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO
+              </p>
+            </section>
+
+            {/* 7. Google Maps */}
+            <section className='section'>
+              <h2>7. Google Maps</h2>
+              <p>
+                Diese Website nutzt Google Maps zur Darstellung von Karten.
+                Anbieter ist Google Ireland Limited, Gordon House, Barrow
+                Street, Dublin 4, Irland.
+              </p>
+              <p>
+                Bei Nutzung von Google Maps können personenbezogene Daten (z. B.
+                IP-Adresse) an Google übertragen werden.
+              </p>
+              <p>
+                <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO
+              </p>
+            </section>
+
+            {/* 8. Cookies */}
+            <section className='section'>
+              <h2>8. Cookies</h2>
+              <p>
+                Diese Website verwendet ausschließlich technisch notwendige
+                Cookies. Diese sind für den Betrieb der Website erforderlich und
+                können nicht deaktiviert werden.
+              </p>
+              <p>
+                <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO
+              </p>
+            </section>
+
+            {/* 9. Rechte */}
+            <section className='section'>
+              <h2>9. Ihre Rechte</h2>
               <ul>
-                <li>Terminvereinbarung und -verwaltung</li>
-                <li>Kommunikation bezüglich Ihrer Termine</li>
-                <li>Sicherstellung der Funktionsfähigkeit der Website</li>
-                <li>Verbesserung unseres Angebots</li>
-                <li>Erfüllung gesetzlicher Aufbewahrungspflichten</li>
+                <li>Auskunft (Art. 15 DSGVO)</li>
+                <li>Berichtigung (Art. 16 DSGVO)</li>
+                <li>Löschung (Art. 17 DSGVO)</li>
+                <li>Einschränkung (Art. 18 DSGVO)</li>
+                <li>Datenübertragbarkeit (Art. 20 DSGVO)</li>
+                <li>Widerspruch (Art. 21 DSGVO)</li>
               </ul>
             </section>
 
+            {/* 10. Beschwerderecht */}
             <section className='section'>
-              <h2>5. Rechtsgrundlage der Datenverarbeitung</h2>
+              <h2>10. Beschwerderecht</h2>
               <p>
-                Die Verarbeitung Ihrer personenbezogenen Daten erfolgt auf
-                Grundlage von:
+                Sie haben das Recht, sich bei einer Datenschutzaufsichtsbehörde
+                zu beschweren:
               </p>
-              <ul>
-                <li>
-                  <strong>Art. 6 Abs. 1 lit. a DSGVO:</strong> Einwilligung
-                </li>
-                <li>
-                  <strong>Art. 6 Abs. 1 lit. b DSGVO:</strong> Vertragserfüllung
-                </li>
-                <li>
-                  <strong>Art. 6 Abs. 1 lit. f DSGVO:</strong> Berechtigte
-                  Interessen
-                </li>
-              </ul>
-            </section>
-
-            <section className='section'>
-              <h2>6. Speicherdauer</h2>
               <p>
-                Ihre personenbezogenen Daten werden nur so lange gespeichert,
-                wie dies für die Erfüllung der Zwecke erforderlich ist oder
-                gesetzliche Aufbewahrungsfristen bestehen. Termindaten werden
-                nach Abschluss der Behandlung und Ablauf der gesetzlichen
-                Aufbewahrungsfrist gelöscht.
+                Landesbeauftragte für Datenschutz und Informationsfreiheit NRW
               </p>
             </section>
 
+            {/* 11. Änderungen */}
             <section className='section'>
-              <h2>7. Ihre Rechte</h2>
+              <h2>11. Änderungen dieser Datenschutzerklärung</h2>
               <p>
-                Sie haben folgende Rechte bezüglich Ihrer personenbezogenen
-                Daten:
-              </p>
-              <ul>
-                <li>
-                  <strong>Auskunftsrecht:</strong> Recht auf Information über
-                  verarbeitete Daten
-                </li>
-                <li>
-                  <strong>Berichtigungsrecht:</strong> Recht auf Korrektur
-                  falscher Daten
-                </li>
-                <li>
-                  <strong>Löschungsrecht:</strong> Recht auf Löschung Ihrer
-                  Daten
-                </li>
-                <li>
-                  <strong>Einschränkungsrecht:</strong> Recht auf Einschränkung
-                  der Verarbeitung
-                </li>
-                <li>
-                  <strong>Widerspruchsrecht:</strong> Recht auf Widerspruch
-                  gegen die Verarbeitung
-                </li>
-                <li>
-                  <strong>Datenübertragbarkeit:</strong> Recht auf Übertragung
-                  Ihrer Daten
-                </li>
-              </ul>
-              <p>
-                Um Ihre Rechte auszuüben, wenden Sie sich bitte an uns unter den
-                oben genannten Kontaktdaten.
-              </p>
-            </section>
-
-            <section className='section'>
-              <h2>8. Beschwerderecht</h2>
-              <p>
-                Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde
-                über die Verarbeitung Ihrer personenbezogenen Daten durch uns zu
-                beschweren.
-              </p>
-            </section>
-
-            <section className='section'>
-              <h2>9. Cookies</h2>
-              <p>
-                Unsere Website verwendet Cookies, um die Benutzerfreundlichkeit
-                zu verbessern. Cookies sind kleine Textdateien, die auf Ihrem
-                Gerät gespeichert werden. Sie können die Verwendung von Cookies
-                in Ihren Browsereinstellungen deaktivieren.
-              </p>
-            </section>
-
-            <section className='section'>
-              <h2>10. Änderungen der Datenschutzerklärung</h2>
-              <p>
-                Wir behalten uns vor, diese Datenschutzerklärung zu
-                aktualisieren, um sie an geänderte Rechtslagen oder bei
-                Änderungen unserer Leistungen sowie der Datenverarbeitung
+                Wir behalten uns vor, diese Datenschutzerklärung anzupassen, um
+                sie an geänderte Rechtslagen oder technische Änderungen
                 anzupassen.
               </p>
             </section>

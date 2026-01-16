@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import alkadiNeuImage from '../assets/alkadi_neu.png';
@@ -13,6 +14,8 @@ interface HomePageProps {
 
 const HomePage: React.FC<HomePageProps> = ({ onLocationSelect }) => {
   useScrollToTop();
+  const navigate = useNavigate();
+  
   const handleUeberUnsClick = () => {
     const locationsSection = document.getElementById('locations');
     if (locationsSection) {
@@ -21,6 +24,10 @@ const HomePage: React.FC<HomePageProps> = ({ onLocationSelect }) => {
         block: 'start',
       });
     }
+  };
+
+  const handleLeistungenClick = () => {
+    navigate('/leistungen');
   };
 
   return (
@@ -41,7 +48,9 @@ const HomePage: React.FC<HomePageProps> = ({ onLocationSelect }) => {
               Professionelle medizinische Betreuung für Ihre Gesundheit
             </p>
             <div className='hero-buttons'>
-              <button className='primary-button'>Unsere Leistungen</button>
+              <button className='primary-button' onClick={handleLeistungenClick}>
+                Unsere Leistungen
+              </button>
               <button
                 className='secondary-button'
                 onClick={handleUeberUnsClick}
